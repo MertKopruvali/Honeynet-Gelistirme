@@ -1,0 +1,18 @@
+[2025-05-01 08:51:09] [HTTP] [IP:10.0.2.2] [Port:52510] Request: GET / HTTP/1.1 [User-Agent: curl/8.11.1] [OS: Windows (curl/wget tahmini)]
+[2025-05-01 08:51:13] [HTML] [IP: 10.0.2.2] [Port: 52512] GET Request: GET / HTTP/1.1
+[2025-05-01 08:51:55] [SSH] [IP: 10.0.2.2] [Port: 52521] User: testuser Password: toor [RESULT: FAIL]
+[2025-05-01 08:52:00] [SSH] [IP: 10.0.2.2] [Port: 52521] User: testuser Password: password123 [RESULT: SUCCESS]
+[2025-05-01 09:01:44] [HTTP] [IP:10.0.2.2] [Port:52564] Request: GET / HTTP/1.1 [User-Agent: curl/8.11.1] [OS: Windows (curl/wget tahmini)]
+[2025-05-01 09:01:58] [HTTP] [IP:10.0.2.2] [Port:52567] POST Form Data: {} [OS: Windows (curl/wget tahmini)]
+[2025-05-01 09:29:46] [HTTP] [IP:10.0.2.2] [Port:51309] POST Form Data: {} [OS: Windows (curl/wget tahmini)]
+[2025-05-01 09:30:16] [HTTP] [IP:10.0.2.2] [Port:51314] POST Form Data: {} [OS: Windows (curl/wget tahmini)]
+[2025-05-01 09:31:22] [HTTP] [IP:10.0.2.2] [Port:51318] Request: POST Form Data: {} [OS: Windows (curl/wget tahmini)]
+[2025-05-04 18:10:47] [HTTP] [IP:192.168.0.29] [Port:41370] Request: GET / HTTP/1.1 [User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36] [OS: Android]
+[2025-05-04 18:10:47] [HTTP] [IP:192.168.0.29] [Port:41382] Request: GET /favicon.ico HTTP/1.1 [User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36] [OS: Android]
+[2025-05-04 18:10:54] [HTML] [IP: 192.168.0.29] [Port: 39850] GET Request: GET / HTTP/1.1
+[2025-05-04 18:15:44] [HTTP] [IP:192.168.0.21] [Port:58581] Request: GET / HTTP/1.1 [User-Agent: curl/8.9.1] [OS: Windows (curl/wget tahmini)]
+[2025-05-04 18:15:47] [HTML] [IP: 192.168.0.21] [Port: 58590] GET Request: GET / HTTP/1.1
+[2025-05-04 19:07:54] [SSH] [IP: 192.168.0.21] [Port: 58712] User: testuser Password: password [RESULT: FAIL]
+[2025-05-04 19:07:56] [SSH] [IP: 192.168.0.21] [Port: 58712] User: testuser Password:  [RESULT: FAIL]
+[2025-05-04 19:08:02] [SSH] [IP: 192.168.0.21] [Port: 58712] User: testuser Password: password123 [RESULT: SUCCESS]
+[2025-05-05 09:02:01] [HTML] [IP: 10.22.86.241] [Port: 63194] GET Request: GET / HTTP/1.1
