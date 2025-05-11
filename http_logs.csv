@@ -1,0 +1,10 @@
+timestamp,ip,port,request_type,request_info
+2025-05-01 08:51:09,10.0.2.2,52510,GET,Request: GET / HTTP/1.1 [User-Agent: curl/8.11.1] [OS: Windows (curl/wget tahmini)]
+2025-05-01 09:01:44,10.0.2.2,52564,GET,Request: GET / HTTP/1.1 [User-Agent: curl/8.11.1] [OS: Windows (curl/wget tahmini)]
+2025-05-01 09:01:58,10.0.2.2,52567,Bilinmeyen,POST Form Data: {} [OS: Windows (curl/wget tahmini)]
+2025-05-01 09:29:46,10.0.2.2,51309,Bilinmeyen,POST Form Data: {} [OS: Windows (curl/wget tahmini)]
+2025-05-01 09:30:16,10.0.2.2,51314,Bilinmeyen,POST Form Data: {} [OS: Windows (curl/wget tahmini)]
+2025-05-01 09:31:22,10.0.2.2,51318,POST,Request: POST Form Data: {} [OS: Windows (curl/wget tahmini)]
+2025-05-04 18:10:47,192.168.0.29,41370,GET,"Request: GET / HTTP/1.1 [User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36] [OS: Android]"
+2025-05-04 18:10:47,192.168.0.29,41382,GET,"Request: GET /favicon.ico HTTP/1.1 [User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36] [OS: Android]"
+2025-05-04 18:15:44,192.168.0.21,58581,GET,Request: GET / HTTP/1.1 [User-Agent: curl/8.9.1] [OS: Windows (curl/wget tahmini)]

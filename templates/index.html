@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Honeypot Saldırı Grafikleri</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: white;
+            padding: 2rem;
+        }
+        .box {
+            background-color: #2e2e2e;
+            margin-bottom: 2rem;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        select {
+            background-color: #2e2e2e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title has-text-white">Honeypot Saldırı Grafikleri</h1>
+        <form method="get" action="/">
+            <div class="field">
+                <label class="label has-text-white">Honeypot Türü</label>
+                <div class="control">
+                    <div class="select is-dark">
+                        <select name="type" onchange="this.form.submit()">
+                            <option value="http" {% if selected == 'http' %}selected{% endif %}>HTTP</option>
+                            <option value="html" {% if selected == 'html' %}selected{% endif %}>HTML</option>
+                            <option value="ssh" {% if selected == 'ssh' %}selected{% endif %}>SSH</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="box">
+            <h2 class="subtitle has-text-white">Zaman Tabanlı Grafik</h2>
+            <img src="{{ url_for('static', filename=time_graph.split('/')[-1]) }}" alt="Zaman Grafik">
+        </div>
+
+        {% if ip_graph %}
+        <div class="box">
+            <h2 class="subtitle has-text-white">IP Tabanlı Grafik</h2>
+            <img src="{{ url_for('static', filename=ip_graph.split('/')[-1]) }}" alt="IP Grafik">
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

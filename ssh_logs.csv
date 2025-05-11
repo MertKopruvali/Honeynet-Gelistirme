@@ -1,0 +1,6 @@
+timestamp,ip,port,user,result,request_info
+2025-05-01 08:51:55,10.0.2.2,52521,testuser,FAIL,User: testuser Password: toor [RESULT: FAIL]
+2025-05-01 08:52:00,10.0.2.2,52521,testuser,SUCCESS,User: testuser Password: password123 [RESULT: SUCCESS]
+2025-05-04 19:07:54,192.168.0.21,58712,testuser,FAIL,User: testuser Password: password [RESULT: FAIL]
+2025-05-04 19:07:56,192.168.0.21,58712,testuser,FAIL,User: testuser Password:  [RESULT: FAIL]
+2025-05-04 19:08:02,192.168.0.21,58712,testuser,SUCCESS,User: testuser Password: password123 [RESULT: SUCCESS]
