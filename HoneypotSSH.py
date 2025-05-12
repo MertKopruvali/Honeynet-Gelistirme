@@ -39,12 +39,25 @@ def fake_shell(channel, username):
         while True:
             channel.send(f"{username}@honeypot:~$ ")
             command = ""
-            while not command.endswith("\n"):
-                data = channel.recv(1024).decode("utf-8")
-                if not data:
-                    print("[!] Boş veri algılandı, bağlantı kesilmiş olabilir.")
-                    return
-                command += data
+
+            try:
+                while True:
+                    data = channel.recv(1024)
+                    if not data:
+                        print("[!] Boş veri algılandı, bağlantı kesilmiş olabilir.")
+                        return
+
+                    data = data.decode("utf-8")
+                    channel.send(data)
+                    command += data
+
+                    # Komut tamamlandı mı kontrol et
+                    if command.endswith("\n"):
+                        break
+
+            except Exception as e:
+                print(f"[!] recv() hatası: {str(e)}")
+                return
 
             command = command.strip()
             if not command:
