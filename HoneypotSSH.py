@@ -42,6 +42,7 @@ def fake_shell(channel, username):
             while not command.endswith("\n"):
                 data = channel.recv(1024).decode("utf-8")
                 if not data:
+                    print("[!] Boş veri algılandı, bağlantı kesilmiş olabilir.")
                     return
                 command += data
 
@@ -112,6 +113,12 @@ class SSHHoneypotServer(paramiko.ServerInterface):
     def get_allowed_auths(self, username):
         return "password"
 
+    def check_channel_request(self, kind, chanid): 
+        if kind == "session":
+            return paramiko.OPEN_SUCCEEDED
+        return paramiko.OPEN_FAILED_ADMINISTRATIVELY_PROHIBITED
+
+
     def check_channel_pty_request(self, channel, term, width, height, pixelwidth, pixelheight, modes):
         return True
 
@@ -147,11 +154,13 @@ def start_ssh_honeypot(host="0.0.0.0", port=2222):
             transport.start_server(server=server)
 
             channel = transport.accept(20)
+            print("Channel:", channel)
             if channel is None:
                 print("[!] Kanal oluşturulamadı.")
                 continue
 
             # Fake shell başlat
+            print("[+] Kanal açıldı.")
             fake_shell(channel, server.username)
             channel.close()
 
