@@ -47,13 +47,20 @@ def fake_shell(channel, username):
                         print("[!] Boş veri algılandı, bağlantı kesilmiş olabilir.")
                         return
 
-                    data = data.decode("utf-8")
-                    channel.send(data)
-                    command += data
+                    decode = data.decode("utf-8", errors="ignore")
 
-                    # Komut tamamlandı mı kontrol et
-                    if command.endswith("\n"):
-                        break
+                    if decode == "\r": 
+                         channel.send("\r\n")
+                         break
+
+                    elif decode == "\x7f" or decode == "\b":
+                         if len(command) > 0 :
+                              command = command[:-1]
+                              channel.send("\b\b")
+                    else:
+                         command += decode
+                         channel.send(decode)
+
 
             except Exception as e:
                 print(f"[!] recv() hatası: {str(e)}")

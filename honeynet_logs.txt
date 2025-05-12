@@ -97,3 +97,16 @@
 [2025-05-12 15:13:44] [SSH] [IP: 88.239.147.153] [Port: 62918] Command executed: ls
 [2025-05-12 15:16:58] [SSH] [IP: 88.239.147.153] [Port: 53437] User: root Password: toor [RESULT: SUCCESS]
 [2025-05-12 15:17:06] [SSH] [IP: 88.239.147.153] [Port: 53437] Command executed: ls
+[2025-05-12 15:33:33] [SSH] [IP: 88.239.147.153] [Port: 53512] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 15:33:36] [SSH] [IP: 88.239.147.153] [Port: 53512] Command executed: ls
+[2025-05-12 15:33:41] [SSH] [IP: 88.239.147.153] [Port: 53512] Command executed: lls
+[2025-05-12 15:33:47] [SSH] [IP: 88.239.147.153] [Port: 53512] Command executed: ls
+[2025-05-12 15:33:58] [SSH] [IP: 88.239.147.153] [Port: 53512] Command executed: ls
+[2025-05-12 15:34:08] [SSH] [IP: 88.239.147.153] [Port: 53512] Command executed: cd bin
+[2025-05-12 15:34:22] [SSH] [IP: 88.239.147.153] [Port: 53512] Command executed: cd boot
+[2025-05-12 15:34:27] [SSH] [IP: 88.239.147.153] [Port: 53512] Command executed: whoami
+[2025-05-12 15:34:31] [SSH] [IP: 88.239.147.153] [Port: 53512] Command executed: whoami
+[2025-05-12 15:34:37] [SSH] [IP: 88.239.147.153] [Port: 53512] Command executed: ls
+[2025-05-12 15:35:17] [SSH] [IP: 88.239.147.153] [Port: 53512] Command executed: ls
+[2025-05-12 15:35:19] [SSH] [IP: 88.239.147.153] [Port: 53512] Command executed: ls
+[2025-05-12 15:35:25] [SSH] [IP: 88.239.147.153] [Port: 53512] Command executed: ls
