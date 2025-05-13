@@ -5,6 +5,8 @@ import datetime
 import time
 from collections import defaultdict
 
+start_time = time.time()
+
 # Giriş izleme ve saldırı tespiti için veri yapıları
 login_attempts = defaultdict(list)
 ddos_tracker = defaultdict(list)
@@ -33,11 +35,11 @@ def detect_brute_force(ip):
 # Sahte terminal kabuğu
 def fake_shell(channel, username):
     try:
-        channel.send(f"Welcome to fake SSH shell, {username}!\n")
-        channel.send("Type 'help' for available commands.\n\n")
+        channel.sendall(f"Welcome to fake SSH shell, {username}!\n")
+        channel.sendall("Type 'help' for available commands.\n\n")
 
         while True:
-            channel.send(f"{username}@honeypot:~$ ")
+            channel.sendall(f"{username}@honeypot:~$ ")
             command = ""
 
             try:
@@ -50,17 +52,16 @@ def fake_shell(channel, username):
                     decode = data.decode("utf-8", errors="ignore")
 
                     if decode == "\r": 
-                         channel.send("\r\n")
+                         channel.sendall("\r\n")
                          break
 
                     elif decode == "\x7f" or decode == "\b":
                          if len(command) > 0 :
                               command = command[:-1]
-                              channel.send("\b\b")
+                              channel.sendall("\b")
                     else:
                          command += decode
-                         channel.send(decode)
-
+                         channel.sendall(decode)
 
             except Exception as e:
                 print(f"[!] recv() hatası: {str(e)}")
@@ -71,27 +72,66 @@ def fake_shell(channel, username):
                 continue
 
             log_connection("SSH", channel.getpeername()[0], channel.getpeername()[1], f"Command executed: {command}")
-
             if command == "help":
-                channel.send("Available commands: ls, pwd, whoami, uptime, cat, echo, exit\n")
+                channel.sendall("Available commands: ls, pwd, whoami, uptime, echo, ls /home, ls /root, cat /etc/passwd, cat /etc/shadow, ps aux, ip a, reboot, exit\n")
             elif command == "ls":
-                channel.send("bin  boot  dev  etc  home  lib  media  mnt  opt  proc  root  run  sbin  srv  tmp  usr  var\n")
+                channel.sendall("bin  boot  dev  etc  lib  media  mnt  opt  proc  root  run  sbin  srv  tmp  usr  var\n")
             elif command == "pwd":
-                channel.send("/root\n")
+                channel.sendall("/home\n")
             elif command == "whoami":
-                channel.send(f"{username}\n")
+                channel.sendall(f"{username}\n")
             elif command == "uptime":
-                channel.send(" 10:23:45 up 5 days,  2:34,  1 user,  load average: 0.00, 0.01, 0.05\n")
-            elif command.startswith("cat "):
-                channel.send(f"cat: {command.split(' ', 1)[1]}: No such file or directory\n")
+                uptime_sec = int(time.time() - start_time)
+                days       = uptime_sec // 86400
+                hours      = (uptime_sec % 86400) // 3600
+                minutes    = (uptime_sec % 3600) // 60
+
+                # Basit sahte yük ortalaması:
+                load1  = round(0.05 + (uptime_sec % 13) * 0.01, 2)
+                load5  = round(load1 + 0.02, 2)
+                load15 = round(load5 + 0.03, 2)
+
+                now_str = time.strftime("%H:%M:%S")
+                out = (f" {now_str} up {days} days, {hours}:{minutes:02d},  1 user,  "
+                     f"load average: {load1:.2f}, {load5:.2f}, {load15:.2f}\n")
+                channel.sendall(out)
             elif command.startswith("echo "):
                 message = command.split(" ", 1)[1]
-                channel.send(message + "\n")
+                channel.sendall(message + "\n")
+            elif command == "ls /home":
+                channel.sendall("admin  Users  Users2\n")
+            elif command == "ls /root":
+                channel.sendall(".bashrc  .profile  .bash_history  scripts  backups  secrets.txt  notes.txt\n")
+            elif command == "ls /etc":
+                channel.sendall("passwd  shadow  hostname  hosts  network  ssh  cron.d  resolv.conf  systemd\n")
+            elif command == "cat /etc/passwd":
+                channel.sendall("root:x:0:0:root:/root:/bin/bash\nuser1:x:1001:1001:User One:/home/user1:/bin/bash\n")
+            elif command == "cat /etc/shadow":
+                channel.sendall("root:$6$abcdefgh$...:18000:0:99999:7:::\nuser1:$6$ijklmnop$...:18000:0:99999:7:::\n")
+            elif command == "ps aux":
+                channel.sendall("root       1  0.0  0.1  51234  1234 ?        Ss   15:23   0:01 /sbin/init\nuser1     1234  0.0  0.1  12345  6789 ?        S    15:25   0:00 sshd\n")
+            elif command == "ip a":
+                output = (
+                     "1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN\n"
+                     "\tlink/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00\n"
+                     "\tinet 127.0.0.1/8 scope host lo\n"
+                     "\tvalid_lft forever preferred_lft forever\n"
+                     "2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP qlen 1000\n"
+                     "link/ether 00:0c:29:68:22:5c brd ff:ff:ff:ff:ff:ff\n"
+                     "inet 192.168.1.100/24 brd 192.168.1.255 scope global dynamic eth0\n"
+                     "valid_lft 86398sec preferred_lft 86398sec\n"
+                )
+                channel.sendall(output)
+            elif command == "reboot":
+                channel.sendall("System rebooting...\n")
+                time.sleep(5)
+                channel.sendall("System rebooted successfully.\n")
+
             elif command == "exit":
-                channel.send("Bye!\n")
+                channel.sendall("Bye!\n")
                 break
             else:
-                channel.send(f"bash: {command}: command not found\n")
+                channel.sendall(f"bash: {command}: command not found\n")
     except Exception as e:
         print(f"[!] Fake shell hatası: {str(e)}")
 
@@ -138,9 +178,8 @@ class SSHHoneypotServer(paramiko.ServerInterface):
             return paramiko.OPEN_SUCCEEDED
         return paramiko.OPEN_FAILED_ADMINISTRATIVELY_PROHIBITED
 
-
     def check_channel_pty_request(self, channel, term, width, height, pixelwidth, pixelheight, modes):
-        return True
+        return True  # pty desteğini burada sağlıyoruz.
 
     def check_channel_shell_request(self, channel):
         return True

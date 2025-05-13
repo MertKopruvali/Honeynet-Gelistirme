@@ -110,3 +110,127 @@
 [2025-05-12 15:35:17] [SSH] [IP: 88.239.147.153] [Port: 53512] Command executed: ls
 [2025-05-12 15:35:19] [SSH] [IP: 88.239.147.153] [Port: 53512] Command executed: ls
 [2025-05-12 15:35:25] [SSH] [IP: 88.239.147.153] [Port: 53512] Command executed: ls
+[2025-05-12 15:47:36] [SSH] [IP: 88.239.147.153] [Port: 53605] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 15:47:39] [SSH] [IP: 88.239.147.153] [Port: 53605] Command executed: ls
+[2025-05-12 15:47:44] [SSH] [IP: 88.239.147.153] [Port: 53605] Command executed: ls
+[2025-05-12 15:47:49] [SSH] [IP: 88.239.147.153] [Port: 53605] Command executed: cd bin
+[2025-05-12 15:50:24] [SSH] [IP: 88.239.147.153] [Port: 53624] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 15:54:04] [SSH] [IP: 88.239.147.153] [Port: 53641] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 15:54:08] [SSH] [IP: 88.239.147.153] [Port: 53641] Command executed: ls
+[2025-05-12 15:54:12] [SSH] [IP: 88.239.147.153] [Port: 53641] Command executed: ls
+[2025-05-12 16:08:45] [SSH] [IP: 88.239.147.153] [Port: 53721] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 16:08:50] [SSH] [IP: 88.239.147.153] [Port: 53721] Command executed: help
+[2025-05-12 16:08:57] [SSH] [IP: 88.239.147.153] [Port: 53721] Command executed: ls/home
+[2025-05-12 16:09:07] [SSH] [IP: 88.239.147.153] [Port: 53721] Command executed: ls /root
+[2025-05-12 16:09:17] [SSH] [IP: 88.239.147.153] [Port: 53721] Command executed: [A[Bls /home
+[2025-05-12 16:09:58] [SSH] [IP: 88.239.147.153] [Port: 53721] Command executed: cat /etc/passwd
+[2025-05-12 16:10:28] [SSH] [IP: 88.239.147.153] [Port: 53721] Command executed: [A[Bcat /etc/shadow[D[D[D[D[D[D[D[
+[2025-05-12 16:10:43] [SSH] [IP: 88.239.147.153] [Port: 53721] Command executed: cat /etc/shadow,
+[2025-05-12 16:10:51] [SSH] [IP: 88.239.147.153] [Port: 53721] Command executed: [A
+[2025-05-12 16:11:01] [SSH] [IP: 88.239.147.153] [Port: 53721] Command executed: cat /etc/shadow
+[2025-05-12 16:11:55] [SSH] [IP: 88.239.147.153] [Port: 53808] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 16:11:58] [SSH] [IP: 88.239.147.153] [Port: 53808] Command executed: ls
+[2025-05-12 16:12:05] [SSH] [IP: 88.239.147.153] [Port: 53808] Command executed: help
+[2025-05-12 16:12:15] [SSH] [IP: 88.239.147.153] [Port: 53808] Command executed: ls /home
+[2025-05-12 16:12:22] [SSH] [IP: 88.239.147.153] [Port: 53808] Command executed: [A[Bls /root
+[2025-05-12 16:12:42] [SSH] [IP: 88.239.147.153] [Port: 53808] Command executed: cat /etc/passwd
+[2025-05-12 16:13:08] [SSH] [IP: 88.239.147.153] [Port: 53808] Command executed: ls /etc
+[2025-05-12 16:14:38] [SSH] [IP: 88.239.147.153] [Port: 53818] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 16:14:49] [SSH] [IP: 88.239.147.153] [Port: 53818] Command executed: ls /root
+[2025-05-12 16:15:28] [SSH] [IP: 88.239.147.153] [Port: 53824] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 16:15:32] [SSH] [IP: 88.239.147.153] [Port: 53824] Command executed: help
+[2025-05-12 16:15:37] [SSH] [IP: 88.239.147.153] [Port: 53824] Command executed: ls /home
+[2025-05-12 16:15:43] [SSH] [IP: 88.239.147.153] [Port: 53824] Command executed: ls /root
+[2025-05-12 16:15:52] [SSH] [IP: 88.239.147.153] [Port: 53824] Command executed: cat /etc/passwd
+[2025-05-12 16:16:07] [SSH] [IP: 88.239.147.153] [Port: 53824] Command executed: cat /etc/shadow
+[2025-05-12 16:20:35] [SSH] [IP: 88.239.147.153] [Port: 53849] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 16:20:48] [SSH] [IP: 88.239.147.153] [Port: 53849] Command executed: c
+[2025-05-12 16:20:59] [SSH] [IP: 88.239.147.153] [Port: 53849] Command executed: cat /etc/passwd
+[2025-05-12 16:22:04] [SSH] [IP: 88.239.147.153] [Port: 53849] Command executed: [A[Bcat /etc/passwd
+[2025-05-12 16:22:56] [SSH] [IP: 88.239.147.153] [Port: 53857] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 16:23:11] [SSH] [IP: 88.239.147.153] [Port: 53857] Command executed: cat/etc/passwd
+[2025-05-12 16:23:20] [SSH] [IP: 88.239.147.153] [Port: 53857] Command executed: ls
+[2025-05-12 16:23:38] [SSH] [IP: 88.239.147.153] [Port: 53857] Command executed: cat /etc/passwd
+[2025-05-12 16:23:50] [SSH] [IP: 88.239.147.153] [Port: 53857] Command executed: [A[Bcat
+[2025-05-12 16:29:53] [SSH] [IP: 88.239.147.153] [Port: 53857] Command executed: cat/etc/passwd
+[2025-05-12 16:30:28] [SSH] [IP: 88.239.147.153] [Port: 53911] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 16:30:40] [SSH] [IP: 88.239.147.153] [Port: 53911] Command executed: cat/etc/passwd
+[2025-05-12 16:30:50] [SSH] [IP: 88.239.147.153] [Port: 53911] Command executed: cat /etc/shadow
+[2025-05-12 16:31:02] [SSH] [IP: 88.239.147.153] [Port: 53911] Command executed: [A[Bcat/etc/shadow
+[2025-05-12 16:33:11] [SSH] [IP: 88.239.147.153] [Port: 53920] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 16:33:26] [SSH] [IP: 88.239.147.153] [Port: 53920] Command executed: cat/etc/passwd
+[2025-05-12 16:33:45] [SSH] [IP: 88.239.147.153] [Port: 53920] Command executed: cat /etc/shadows
+[2025-05-12 16:39:49] [SSH] [IP: 88.239.147.153] [Port: 53953] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 16:39:58] [SSH] [IP: 88.239.147.153] [Port: 53953] Command executed: cat
+[2025-05-12 16:40:03] [SSH] [IP: 88.239.147.153] [Port: 53953] Command executed: ls /cat
+[2025-05-12 16:40:14] [SSH] [IP: 88.239.147.153] [Port: 53953] Command executed: l
+[2025-05-12 16:42:58] [SSH] [IP: 88.239.147.153] [Port: 53953] Command executed: cat /etc/passwd
+[2025-05-12 16:43:07] [SSH] [IP: 88.239.147.153] [Port: 53953] Command executed: cat/etc/passwd
+[2025-05-12 16:43:19] [SSH] [IP: 88.239.147.153] [Port: 53953] Command executed: [A[Bcat /etc/shadow
+[2025-05-12 16:44:44] [SSH] [IP: 88.239.147.153] [Port: 53975] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 16:44:52] [SSH] [IP: 88.239.147.153] [Port: 53975] Command executed: ls /cat
+[2025-05-12 16:45:05] [SSH] [IP: 88.239.147.153] [Port: 53975] Command executed: ls /etc
+[2025-05-12 16:45:26] [SSH] [IP: 88.239.147.153] [Port: 53975] Command executed: ls /etc
+[2025-05-12 16:45:36] [SSH] [IP: 88.239.147.153] [Port: 53975] Command executed: cat /etc/shadow
+[2025-05-12 16:49:27] [SSH] [IP: 88.239.147.153] [Port: 53999] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 16:49:37] [SSH] [IP: 88.239.147.153] [Port: 53999] Command executed: cat /etc/shadow
+[2025-05-12 22:02:05] [SSH] [IP: 24.133.24.34] [Port: 37046] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 22:02:08] [SSH] [IP: 24.133.24.34] [Port: 37046] Command executed: ls
+[2025-05-12 22:02:13] [SSH] [IP: 24.133.24.34] [Port: 37046] Command executed: help
+[2025-05-12 22:02:28] [SSH] [IP: 24.133.24.34] [Port: 37046] Command executed: ps aux
+[2025-05-12 22:02:45] [SSH] [IP: 24.133.24.34] [Port: 37046] Command executed: reboot
+[2025-05-12 22:03:04] [SSH] [IP: 24.133.24.34] [Port: 37046] Command executed: pwd
+[2025-05-12 22:03:34] [SSH] [IP: 24.133.24.34] [Port: 37046] Command executed: ls /root
+[2025-05-12 22:03:44] [SSH] [IP: 24.133.24.34] [Port: 37046] Command executed: uptime
+[2025-05-12 22:03:51] [SSH] [IP: 24.133.24.34] [Port: 37046] Command executed: cat
+[2025-05-12 22:04:00] [SSH] [IP: 24.133.24.34] [Port: 37046] Command executed: echo
+[2025-05-12 22:04:08] [SSH] [IP: 24.133.24.34] [Port: 37046] Command executed: cat
+[2025-05-12 22:04:14] [SSH] [IP: 24.133.24.34] [Port: 37046] Command executed: ls /home
+[2025-05-12 22:04:25] [SSH] [IP: 24.133.24.34] [Port: 37046] Command executed: ls /root
+[2025-05-12 22:05:42] [SSH] [IP: 24.133.24.34] [Port: 37161] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 22:05:53] [SSH] [IP: 24.133.24.34] [Port: 37161] Command executed: cat /etc/shadow
+[2025-05-12 22:07:28] [SSH] [IP: 24.133.24.34] [Port: 37161] Command executed: help
+[2025-05-12 22:07:38] [SSH] [IP: 24.133.24.34] [Port: 37161] Command executed: echo
+[2025-05-12 22:28:58] [SSH] [IP: 24.133.24.34] [Port: 34168] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 22:29:03] [SSH] [IP: 24.133.24.34] [Port: 34168] Command executed: uptime
+[2025-05-12 22:29:14] [SSH] [IP: 24.133.24.34] [Port: 34169] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 22:29:17] [SSH] [IP: 24.133.24.34] [Port: 34169] Command executed: ls
+[2025-05-12 22:29:21] [SSH] [IP: 24.133.24.34] [Port: 34169] Command executed: uptime
+[2025-05-12 22:30:27] [SSH] [IP: 24.133.24.34] [Port: 34201] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 22:30:31] [SSH] [IP: 24.133.24.34] [Port: 34201] Command executed: uptime
+[2025-05-12 22:30:42] [SSH] [IP: 24.133.24.34] [Port: 34201] Command executed: [A[Buptime
+[2025-05-12 22:30:48] [SSH] [IP: 24.133.24.34] [Port: 34201] Command executed: uptime
+[2025-05-12 22:36:37] [SSH] [IP: 24.133.24.34] [Port: 34354] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-12 22:36:45] [SSH] [IP: 24.133.24.34] [Port: 34354] Command executed: uptime
+[2025-05-12 22:36:49] [SSH] [IP: 24.133.24.34] [Port: 34354] Command executed: uptime
+[2025-05-12 22:36:53] [SSH] [IP: 24.133.24.34] [Port: 34354] Command executed: uptime
+[2025-05-12 22:36:58] [SSH] [IP: 24.133.24.34] [Port: 34354] Command executed: sd
+[2025-05-13 20:18:25] [SSH] [IP: 24.133.24.34] [Port: 35902] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-13 20:18:49] [SSH] [IP: 24.133.24.34] [Port: 35902] Command executed: help
+[2025-05-13 20:18:57] [SSH] [IP: 24.133.24.34] [Port: 35902] Command executed: echo
+[2025-05-13 20:19:01] [SSH] [IP: 24.133.24.34] [Port: 35902] Command executed: echo
+[2025-05-13 20:19:08] [SSH] [IP: 24.133.24.34] [Port: 35902] Command executed: ls /home
+[2025-05-13 20:19:14] [SSH] [IP: 24.133.24.34] [Port: 35902] Command executed: ls /root
+[2025-05-13 20:19:36] [SSH] [IP: 24.133.24.34] [Port: 35902] Command executed: car /etc/passwd
+[2025-05-13 20:19:47] [SSH] [IP: 24.133.24.34] [Port: 35902] Command executed: cat /etc/passwd
+[2025-05-13 20:20:36] [SSH] [IP: 24.133.24.34] [Port: 35902] Command executed: [A[Bcat /etc/shadow
+[2025-05-13 20:20:49] [SSH] [IP: 24.133.24.34] [Port: 35902] Command executed: cat /etc/shadow
+[2025-05-13 20:21:00] [SSH] [IP: 24.133.24.34] [Port: 35902] Command executed: ps aux
+[2025-05-13 20:21:14] [SSH] [IP: 24.133.24.34] [Port: 35902] Command executed: ip a
+[2025-05-13 20:21:26] [SSH] [IP: 24.133.24.34] [Port: 35902] Command executed: exit
+[2025-05-13 20:22:59] [SSH] [IP: 24.133.24.34] [Port: 36137] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-13 20:23:05] [SSH] [IP: 24.133.24.34] [Port: 36137] Command executed: help
+[2025-05-13 20:23:11] [SSH] [IP: 24.133.24.34] [Port: 36137] Command executed: ip a
+[2025-05-13 20:27:22] [SSH] [IP: 24.133.24.34] [Port: 36263] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-13 20:27:27] [SSH] [IP: 24.133.24.34] [Port: 36263] Command executed: ip a
+[2025-05-13 20:30:28] [SSH] [IP: 24.133.24.34] [Port: 36395] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-13 20:30:33] [SSH] [IP: 24.133.24.34] [Port: 36395] Command executed: ip a
+[2025-05-13 20:33:15] [SSH] [IP: 24.133.24.34] [Port: 36464] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-13 20:33:20] [SSH] [IP: 24.133.24.34] [Port: 36464] Command executed: ip a
+[2025-05-13 20:38:22] [SSH] [IP: 24.133.24.34] [Port: 36555] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-13 20:38:27] [SSH] [IP: 24.133.24.34] [Port: 36555] Command executed: ls
+[2025-05-13 20:38:30] [SSH] [IP: 24.133.24.34] [Port: 36555] Command executed: ip a
+[2025-05-13 20:38:44] [SSH] [IP: 24.133.24.34] [Port: 36555] Command executed: cls
+[2025-05-13 20:38:47] [SSH] [IP: 24.133.24.34] [Port: 36555] Command executed: clear
+[2025-05-13 20:43:05] [SSH] [IP: 24.133.24.34] [Port: 36773] User: root Password: toor [RESULT: SUCCESS]
+[2025-05-13 20:43:24] [SSH] [IP: 24.133.24.34] [Port: 36773] Command executed: ip a
