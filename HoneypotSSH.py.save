@@ -111,16 +111,9 @@ def fake_shell(channel, username):
                 channel.sendall("root       1  0.0  0.1  51234  1234 ?        Ss   15:23   0:01 /sbin/init\nuser1     1234  0.0  0.1  12345  6789 ?        S    15:25   0:00 sshd\n")
             elif command == "ip a":
                 output = (
-                     "1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN\r"
-                     "link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00\n"
-                     "  inet 127.0.0.1/8 scope host lo\n"
-                     "  valid_lft forever preferred_lft forever\n"
-                     "2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP qlen 1000\n"
-                     "link/ether 00:0c:29:68:22:5c brd ff:ff:ff:ff:ff:ff\r"
-                     "  inet 192.168.1.100/24 brd 192.168.1.255 scope global dynamic eth0\n"
-                     "valid_lft 86398sec preferred_lft 86398sec\n"
+
                 )
-                channel.sendall(output)
+                channel.sendall(output {command.strip()}\r\n")
             elif command == "reboot":
                 channel.sendall("System rebooting...\n")
                 time.sleep(5)
