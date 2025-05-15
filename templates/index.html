@@ -53,6 +53,19 @@
             <img src="{{ url_for('static', filename=ip_graph.split('/')[-1]) }}" alt="IP Grafik">
         </div>
         {% endif %}
+
+        {% if request_graph %}
+        <div class="box">
+            <h2 class="subtitle has-text-white">
+                {% if selected in ['http', 'html'] %}
+                    İstek Tipleri Grafiği
+                {% else %}
+                    Giriş Denemeleri Grafiği
+                {% endif %}
+            </h2>
+            <img src="{{ url_for('static', filename=request_graph.split('/')[-1]) }}" alt="Request Grafik">
+        </div>
+        {% endif %}
     </div>
 </body>
-</html>
+</html> 

@@ -45,12 +45,31 @@ def heuristic_os_detection(ip, user_agent):
 
 # Exploit tespiti
 def detect_exploit(request_data):
-    # Directory Traversal Tespiti (URL encoded dahil)
-    if "../" in request_data or "..\\" in request_data or "%2E%2E%2F" in request_data or "%2E%2E%5C" in request_data:
-        return "Directory Traversal Attack"
+    # Directory Traversal Tespiti
+    if "GET" in request_data:
+        request_lines = request_data.splitlines()
+        first_line = request_lines[0]  # GET satırı
+        
+        print(f"[DEBUG] İlk satır: {first_line}")
+        
+        # Path'i al
+        path = first_line.split()[1]  # GET /path HTTP/1.1 formatından path'i al
+        
+        # Path'te /etc/passwd kontrolü
+        if "/etc/passwd" in path:
+            print(f"[DEBUG] Directory traversal tespit edildi: Hassas dosya erişimi")
+            return "Directory Traversal Attack"
+            
+        # Encoded veya normal directory traversal kontrolü
+        if (".." in path or 
+            "%2E%2E" in path or 
+            "../" in path or 
+            "/.." in path):
+            print(f"[DEBUG] Directory traversal tespit edildi: {path}")
+            return "Directory Traversal Attack"
     
     # SQL Injection Tespiti
-    elif "' OR '1'='1" in request_data or "' OR '1'='1' --" in request_data:
+    if "' OR '1'='1" in request_data or "' OR '1'='1' --" in request_data:
         return "SQL Injection Attack"
 
     # XSS Tespiti
@@ -58,7 +77,6 @@ def detect_exploit(request_data):
         return "XSS (Cross-Site Scripting) Attack"
     
     return None
-
 # DDoS Tespiti: IP'den gelen istek sayısını kontrol eder
 def detect_ddos(ip):
     current_time = time.time()

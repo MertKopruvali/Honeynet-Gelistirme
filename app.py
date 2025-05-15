@@ -1,9 +1,34 @@
 from flask import Flask, render_template, request
 import matplotlib.pyplot as plt
 import pandas as pd
+from datetime import datetime
 import os
 
 app = Flask(__name__)
+
+def load_csv_data():
+    data = {
+        'ssh': pd.read_csv('ssh_logs.csv'),
+        'http': pd.read_csv('http_logs.csv'),
+        'html': pd.read_csv('html_logs.csv')
+    }
+    
+    # Convert timestamp strings to datetime objects
+    for key in data:
+        data[key]['timestamp'] = pd.to_datetime(data[key]['timestamp'])
+    
+    return data
+
+def get_statistics(data):
+    stats = {}
+    for honeypot_type, df in data.items():
+        stats[honeypot_type] = {
+            'total_attacks': len(df),
+            'unique_ips': df['ip'].nunique(),
+            'latest_attack': df['timestamp'].max().strftime('%Y-%m-%d %H:%M:%S'),
+            'top_ips': df['ip'].value_counts().head(5).to_dict()
+        }
+    return stats
 
 # Veri yükleme fonksiyonu
 def load_data(log_type):
@@ -30,6 +55,22 @@ def plot_graphs(df, graph_type):
         ip_counts = df["ip"].value_counts().head(10)
     else:
         ip_counts = pd.Series()
+
+    # Request tipi veya Success/Fail grafiği
+    if graph_type in ['http', 'html']:
+        if 'request_info' in df.columns:
+            request_types = df['request_info'].str.extract(r'^(GET|POST|PUT|DELETE)').fillna('OTHER')
+            request_counts = request_types[0].value_counts()
+            has_request_data = not request_counts.empty
+        else:
+            has_request_data = False
+    else:  # SSH için
+        if 'request_info' in df.columns:
+            success_counts = df['request_info'].str.contains('success', case=False, na=False).value_counts()
+            success_counts.index = ['Başarılı' if x else 'Başarısız' for x in success_counts.index]
+            has_request_data = not success_counts.empty
+        else:
+            has_request_data = False
 
     # Zaman grafiği
     fig_time, ax1 = plt.subplots(figsize=(10, 4), facecolor='none')
@@ -66,17 +107,42 @@ def plot_graphs(df, graph_type):
     else:
         ip_path = None
 
-    return time_path, ip_path
+    # Request tipi veya Success/Fail grafiği
+    request_path = None
+    if has_request_data:
+        fig_req, ax3 = plt.subplots(figsize=(10, 4), facecolor='none')
+        if graph_type in ['http', 'html']:
+            request_counts.plot(kind="bar", ax=ax3, color="#4CAF50")
+            ax3.set_title(f"{graph_type.upper()} - İstek Tipleri", fontsize=14, color='#FFFFFF')
+            ax3.set_xlabel("İstek Tipi", fontsize=12, color='#AAAAAA')
+        else:  # SSH için
+            success_counts.plot(kind="bar", ax=ax3, color=["#4CAF50", "#FF5733"])
+            ax3.set_title(f"SSH - Giriş Denemeleri", fontsize=14, color='#FFFFFF')
+            ax3.set_xlabel("Sonuç", fontsize=12, color='#AAAAAA')
+        
+        ax3.set_ylabel("Sayı", fontsize=12, color='#AAAAAA')
+        ax3.tick_params(colors='#AAAAAA', rotation=0)
+        ax3.spines['bottom'].set_color('#444444')
+        ax3.spines['top'].set_color('#444444')
+        ax3.spines['right'].set_color('#444444')
+        ax3.spines['left'].set_color('#444444')
+        ax3.grid(True, linestyle='--', alpha=0.3)
+        request_path = f"static/{graph_type}_request_graph.png"
+        fig_req.savefig(request_path, bbox_inches='tight', facecolor='none')
+        plt.close(fig_req)
+
+    return time_path, ip_path, request_path
 
 @app.route('/', methods=["GET"])
 def index():
     graph_type = request.args.get("type", "http").lower()
     df = load_data(graph_type)
-    time_graph, ip_graph = plot_graphs(df, graph_type)
+    time_graph, ip_graph, request_graph = plot_graphs(df, graph_type)
     return render_template('index.html',
-                           time_graph=time_graph,
-                           ip_graph=ip_graph,
-                           selected=graph_type)
+                         time_graph=time_graph,
+                         ip_graph=ip_graph,
+                         request_graph=request_graph,
+                         selected=graph_type)
 
-if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0')
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0') 
