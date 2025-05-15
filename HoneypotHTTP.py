@@ -69,7 +69,20 @@ def detect_exploit(request_data):
             return "Directory Traversal Attack"
     
     # SQL Injection Tespiti
-    if "' OR '1'='1" in request_data or "' OR '1'='1' --" in request_data:
+    if any(payload in request_data.lower() for payload in [
+        "' or '1'='1",
+        "' or '1'='1' --",
+        "' OR '1'='1'",
+        "' OR '1'='1' --",
+        "' or 'a'='a",
+        "\" or \"1\"=\"1",
+        "' or 1=1/*",
+        "' or 'x'='x",
+        "'or'1'='1",
+        "'or'1'='1' --",
+        "'OR'1'='1'",
+        "'OR'1'='1' --"
+    ]):
         return "SQL Injection Attack"
 
     # XSS Tespiti
