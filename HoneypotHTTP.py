@@ -44,7 +44,7 @@ def heuristic_os_detection(ip, user_agent):
     return detect_os(user_agent)
 
 # Exploit tespiti
-def detect_exploit(request_data):
+def detect_exploit(request_data, ip=None):
     # Directory Traversal Tespiti
     if "GET" in request_data:
         request_lines = request_data.splitlines()
@@ -116,6 +116,8 @@ def detect_ddos(ip):
     # Sadece son 10 saniye içindeki istekleri say
     request_counter[ip] = [timestamp for timestamp in request_counter[ip] if current_time - timestamp <= 10]
 
+    print(f"[DEBUG] {ip} son 10 sn'de {len(request_counter[ip])} istek gönderdi")
+
     if len(request_counter[ip]) > 20:
         return True
     return False
@@ -150,7 +152,7 @@ def start_honeypot(host='0.0.0.0', port=8080):
             # DDoS tespiti
             if detect_ddos(addr[0]):
                 print(f"[DDoS] {addr[0]} IP'sinden gelen çok fazla istek tespit edildi.")
-                log_connection("HTTP", addr[0], addr[1], "DDoS Attack Detected", os="Bilinmiyor")
+                log_connection("HTTP", addr[0], addr[1], "DDoS Attack Detected", os="Bilinmiyor", exploit_type="DDoS Attack")
                 client.close()
                 continue  # DDoS tespit edildiyse, bağlantıyı kes
 
@@ -173,7 +175,7 @@ def start_honeypot(host='0.0.0.0', port=8080):
             os_name = heuristic_os_detection(addr[0], user_agent)
 
             # Exploit tespiti
-            exploit_type = detect_exploit(request_data)
+            exploit_type = detect_exploit(request_data, addr[0])
 
             # Loglama
             if method in ["POST", "PUT", "PATCH"]:
