@@ -86,7 +86,20 @@ def detect_exploit(request_data):
         return "SQL Injection Attack"
 
     # XSS Tespiti
-    elif "<script>" in request_data or "</script>" in request_data:
+    elif any(payload in request_data.lower() for payload in [
+        "<script>",
+        "</script>",
+        "javascript:",
+        "onerror=",
+        "onload=",
+        "alert(",
+        "<img",
+        "<iframe",
+        "document.cookie",
+        "eval(",
+        "src=",
+    ]):
+
         return "XSS (Cross-Site Scripting) Attack"
     
     return None
