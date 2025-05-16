@@ -49,17 +49,17 @@ def detect_exploit(request_data):
     if "GET" in request_data:
         request_lines = request_data.splitlines()
         first_line = request_lines[0]  # GET satırı
-        
+
         print(f"[DEBUG] İlk satır: {first_line}")
-        
+
         # Path'i al
         path = first_line.split()[1]  # GET /path HTTP/1.1 formatından path'i al
-        
+
         # Path'te /etc/passwd kontrolü
         if "/etc/passwd" in path:
             print(f"[DEBUG] Directory traversal tespit edildi: Hassas dosya erişimi")
             return "Directory Traversal Attack"
-            
+
         # Encoded veya normal directory traversal kontrolü
         if (".." in path or 
             "%2E%2E" in path or 
@@ -101,7 +101,11 @@ def detect_exploit(request_data):
     ]):
 
         return "XSS (Cross-Site Scripting) Attack"
-    
+
+    if ip is not None and detect_ddos(ip):
+        return "DDoS Attack"
+
+
     return None
 # DDoS Tespiti: IP'den gelen istek sayısını kontrol eder
 def detect_ddos(ip):
@@ -112,7 +116,6 @@ def detect_ddos(ip):
     # Sadece son 10 saniye içindeki istekleri say
     request_counter[ip] = [timestamp for timestamp in request_counter[ip] if current_time - timestamp <= 10]
 
-    # Eğer 100'den fazla istek varsa, DDoS saldırısı olabilir
     if len(request_counter[ip]) > 20:
         return True
     return False
