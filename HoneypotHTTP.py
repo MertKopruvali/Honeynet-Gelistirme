@@ -149,15 +149,16 @@ def start_honeypot(host='0.0.0.0', port=8080):
             client, addr = server.accept()
             print(f"[!] Bağlantı tespit edildi: {addr[0]}:{addr[1]}")
 
-            # DDoS tespiti
-            if detect_ddos(addr[0]):
-                print(f"[DDoS] {addr[0]} IP'sinden gelen çok fazla istek tespit edildi.")
-                log_connection("HTTP", addr[0], addr[1], "DDoS Attack Detected", os="Bilinmiyor", exploit_type="DDoS Attack")
-                client.close()
-                continue  # DDoS tespit edildiyse, bağlantıyı kes
-
             try:
                 request_data = client.recv(4096).decode('utf-8', errors='ignore')
+
+            # DDoS tespiti
+                if detect_ddos(addr[0]):
+                    print(f"[DDoS] {addr[0]} IP'sinden gelen çok fazla istek tespit edildi.")
+                    log_connection("HTTP", addr[0], addr[1], "DDoS Attack Detected", os="Bilinmiyor", exploit_type="DDoS Attack")
+                    client.close()
+                    continue  # DDoS tespit edildiyse, bağlantıyı kes
+
                 request_line = request_data.splitlines()[0] if request_data else "Boş istek"
                 method = request_line.split()[0]
             except Exception as e:
