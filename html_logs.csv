@@ -7,3 +7,138 @@ timestamp,ip,port,request_info
 2025-05-27 01:52:49,170.64.154.53,46554,GET Request: GET /aaa9 HTTP/1.1
 2025-05-27 01:52:49,170.64.154.53,46564,GET Request: GET /aab8 HTTP/1.1
 2025-05-27 01:52:50,170.64.154.53,46580,GET Request: GET / HTTP/1.1
+2025-05-27 06:57:03,24.133.24.34,35171,"POST Request: POST / HTTP/1.1, Data: {}"
+2025-05-27 06:57:03,24.133.24.34,35171,Login attempt (Failed):
+2025-05-27 06:57:05,24.133.24.34,35172,"POST Request: POST / HTTP/1.1, Data: {}"
+2025-05-27 06:57:05,24.133.24.34,35172,Login attempt (Failed):
+2025-05-27 06:57:07,24.133.24.34,35173,"POST Request: POST / HTTP/1.1, Data: {}"
+2025-05-27 06:57:07,24.133.24.34,35173,Login attempt (Failed):
+2025-05-27 06:57:10,24.133.24.34,35174,"POST Request: POST / HTTP/1.1, Data: {}"
+2025-05-27 06:57:10,24.133.24.34,35174,Login attempt (Failed):
+2025-05-27 06:57:12,24.133.24.34,35176,"POST Request: POST / HTTP/1.1, Data: {}"
+2025-05-27 06:57:12,24.133.24.34,35176,Login attempt (Failed):
+2025-05-27 06:57:12,24.133.24.34,35176,Possible Brute Force Attack Detected! Failed attempts: 5
+2025-05-27 06:57:14,24.133.24.34,35177,"POST Request: POST / HTTP/1.1, Data: {}"
+2025-05-27 06:57:14,24.133.24.34,35177,Login attempt (Failed):
+2025-05-27 06:57:14,24.133.24.34,35177,Possible Brute Force Attack Detected! Failed attempts: 6
+2025-05-27 06:58:22,24.133.24.34,35203,"POST Request: POST / HTTP/1.1, Data: {}"
+2025-05-27 06:58:22,24.133.24.34,35203,Login attempt (Failed):
+2025-05-27 06:58:22,24.133.24.34,35203,Possible Brute Force Attack Detected! Failed attempts: 7
+2025-05-27 06:58:37,24.133.24.34,35206,"POST Request: POST / HTTP/1.1, Data: {}"
+2025-05-27 06:58:37,24.133.24.34,35206,Login attempt (Failed):
+2025-05-27 06:58:37,24.133.24.34,35206,Possible Brute Force Attack Detected! Failed attempts: 8
+2025-05-27 06:58:53,24.133.24.34,35213,"POST Request: POST / HTTP/1.1, Data: {}"
+2025-05-27 06:58:53,24.133.24.34,35213,Login attempt (Failed):
+2025-05-27 06:58:53,24.133.24.34,35213,Possible Brute Force Attack Detected! Failed attempts: 9
+2025-05-27 06:59:30,24.133.24.34,35219,"POST Request: POST / HTTP/1.1, Data: {}"
+2025-05-27 06:59:30,24.133.24.34,35219,Login attempt (Failed):
+2025-05-27 06:59:30,24.133.24.34,35219,Possible Brute Force Attack Detected! Failed attempts: 10
+2025-05-27 07:00:18,24.133.24.34,35256,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:00:18,24.133.24.34,35256,Login attempt (Successful): admin
+2025-05-27 07:00:21,24.133.24.34,35257,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:00:21,24.133.24.34,35257,Login attempt (Successful): admin
+2025-05-27 07:00:23,24.133.24.34,35258,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:00:23,24.133.24.34,35258,Login attempt (Successful): admin
+2025-05-27 07:00:24,24.133.24.34,35260,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:00:24,24.133.24.34,35260,Login attempt (Successful): admin
+2025-05-27 07:00:25,24.133.24.34,35261,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:00:25,24.133.24.34,35261,Login attempt (Successful): admin
+2025-05-27 07:00:26,24.133.24.34,35262,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:00:26,24.133.24.34,35262,Login attempt (Successful): admin
+2025-05-27 07:00:28,24.133.24.34,35264,"POST Request: POST / HTTP/1.1, Data: {}"
+2025-05-27 07:00:28,24.133.24.34,35264,Login attempt (Failed):
+2025-05-27 07:00:29,24.133.24.34,35265,"POST Request: POST / HTTP/1.1, Data: {}"
+2025-05-27 07:00:29,24.133.24.34,35265,Login attempt (Failed):
+2025-05-27 07:00:30,24.133.24.34,35266,"POST Request: POST / HTTP/1.1, Data: {}"
+2025-05-27 07:00:30,24.133.24.34,35266,Login attempt (Failed):
+2025-05-27 07:00:33,24.133.24.34,35269,"POST Request: POST / HTTP/1.1, Data: {}"
+2025-05-27 07:00:33,24.133.24.34,35269,Login attempt (Failed):
+2025-05-27 07:00:34,24.133.24.34,35271,"POST Request: POST / HTTP/1.1, Data: {}"
+2025-05-27 07:00:34,24.133.24.34,35271,Login attempt (Failed):
+2025-05-27 07:00:34,24.133.24.34,35271,Possible Brute Force Attack Detected! Failed attempts: 5
+2025-05-27 07:00:36,24.133.24.34,35272,"POST Request: POST / HTTP/1.1, Data: {}"
+2025-05-27 07:00:36,24.133.24.34,35272,Login attempt (Failed):
+2025-05-27 07:00:36,24.133.24.34,35272,Possible Brute Force Attack Detected! Failed attempts: 6
+2025-05-27 07:00:39,24.133.24.34,35273,"POST Request: POST / HTTP/1.1, Data: {}"
+2025-05-27 07:00:39,24.133.24.34,35273,Login attempt (Failed):
+2025-05-27 07:00:39,24.133.24.34,35273,Possible Brute Force Attack Detected! Failed attempts: 7
+2025-05-27 07:00:46,24.133.24.34,35274,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:00:46,24.133.24.34,35274,Login attempt (Successful): admin
+2025-05-27 07:03:00,24.133.24.34,35305,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:03:00,24.133.24.34,35305,Login attempt (Successful): admin
+2025-05-27 07:03:02,24.133.24.34,35306,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:03:02,24.133.24.34,35306,Login attempt (Successful): admin
+2025-05-27 07:03:05,24.133.24.34,35307,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:03:05,24.133.24.34,35307,Login attempt (Successful): admin
+2025-05-27 07:03:06,24.133.24.34,35308,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:03:06,24.133.24.34,35308,Login attempt (Successful): admin
+2025-05-27 07:03:08,24.133.24.34,35309,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:03:08,24.133.24.34,35309,Login attempt (Successful): admin
+2025-05-27 07:03:09,24.133.24.34,35310,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:03:09,24.133.24.34,35310,Login attempt (Successful): admin
+2025-05-27 07:03:11,24.133.24.34,35311,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:03:11,24.133.24.34,35311,Login attempt (Successful): admin
+2025-05-27 07:03:12,24.133.24.34,35314,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:03:12,24.133.24.34,35314,Login attempt (Successful): admin
+2025-05-27 07:03:14,24.133.24.34,35315,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:03:14,24.133.24.34,35315,Login attempt (Successful): admin
+2025-05-27 07:03:16,24.133.24.34,35316,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:03:16,24.133.24.34,35316,Login attempt (Successful): admin
+2025-05-27 07:03:17,24.133.24.34,35319,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:03:17,24.133.24.34,35319,Login attempt (Successful): admin
+2025-05-27 07:03:22,24.133.24.34,35320,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:03:22,24.133.24.34,35320,Login attempt (Successful): admin
+2025-05-27 07:03:26,24.133.24.34,35321,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}"
+2025-05-27 07:03:26,24.133.24.34,35321,Login attempt (Failed): admin
+2025-05-27 07:03:27,24.133.24.34,35323,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}"
+2025-05-27 07:03:27,24.133.24.34,35323,Login attempt (Failed): admin
+2025-05-27 07:03:29,24.133.24.34,35324,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}"
+2025-05-27 07:03:29,24.133.24.34,35324,Login attempt (Failed): admin
+2025-05-27 07:03:31,24.133.24.34,35325,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}"
+2025-05-27 07:03:31,24.133.24.34,35325,Login attempt (Failed): admin
+2025-05-27 07:03:32,24.133.24.34,35326,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}"
+2025-05-27 07:03:32,24.133.24.34,35326,Login attempt (Failed): admin
+2025-05-27 07:03:32,24.133.24.34,35326,Possible Brute Force Attack Detected! Failed attempts: 5
+2025-05-27 07:03:34,24.133.24.34,35327,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}"
+2025-05-27 07:03:34,24.133.24.34,35327,Login attempt (Failed): admin
+2025-05-27 07:03:34,24.133.24.34,35327,Possible Brute Force Attack Detected! Failed attempts: 6
+2025-05-27 07:03:35,24.133.24.34,35328,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}"
+2025-05-27 07:03:35,24.133.24.34,35328,Login attempt (Failed): admin
+2025-05-27 07:03:35,24.133.24.34,35328,Possible Brute Force Attack Detected! Failed attempts: 7
+2025-05-27 07:03:38,24.133.24.34,35329,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}"
+2025-05-27 07:03:38,24.133.24.34,35329,Login attempt (Failed): admin
+2025-05-27 07:03:38,24.133.24.34,35329,Possible Brute Force Attack Detected! Failed attempts: 8
+2025-05-27 07:03:39,24.133.24.34,35330,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}"
+2025-05-27 07:03:39,24.133.24.34,35330,Login attempt (Failed): admin
+2025-05-27 07:03:39,24.133.24.34,35330,Possible Brute Force Attack Detected! Failed attempts: 9
+2025-05-27 07:03:40,24.133.24.34,35331,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}"
+2025-05-27 07:03:40,24.133.24.34,35331,Login attempt (Failed): admin
+2025-05-27 07:03:40,24.133.24.34,35331,Possible Brute Force Attack Detected! Failed attempts: 10
+2025-05-27 07:03:41,24.133.24.34,35332,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}"
+2025-05-27 07:03:41,24.133.24.34,35332,Login attempt (Failed): admin
+2025-05-27 07:03:41,24.133.24.34,35332,Possible Brute Force Attack Detected! Failed attempts: 11
+2025-05-27 07:03:41,24.133.24.34,35333,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}"
+2025-05-27 07:03:41,24.133.24.34,35333,Login attempt (Failed): admin
+2025-05-27 07:03:41,24.133.24.34,35333,Possible Brute Force Attack Detected! Failed attempts: 12
+2025-05-27 07:08:47,24.133.24.34,35404,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}"
+2025-05-27 07:08:47,24.133.24.34,35404,Login attempt (Failed): admin
+2025-05-27 07:08:49,24.133.24.34,35405,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}"
+2025-05-27 07:08:49,24.133.24.34,35405,Login attempt (Failed): admin
+2025-05-27 07:08:51,24.133.24.34,35406,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}"
+2025-05-27 07:08:51,24.133.24.34,35406,Login attempt (Failed): admin
+2025-05-27 07:10:31,24.133.24.34,35424,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}"
+2025-05-27 07:10:31,24.133.24.34,35424,Login attempt (Failed): admin
+2025-05-27 07:10:35,24.133.24.34,35425,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 07:10:35,24.133.24.34,35425,Login attempt (Successful): admin
+2025-05-27 13:23:32,24.133.24.34,35605,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 13:23:32,24.133.24.34,35605,Login attempt (Successful): admin
+2025-05-27 13:25:45,24.133.24.34,35653,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 13:25:45,24.133.24.34,35653,Login attempt (Successful): admin
+2025-05-27 13:43:33,24.133.24.34,35968,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 13:43:33,24.133.24.34,35968,Login attempt (Successful): admin
+2025-05-27 13:43:35,24.133.24.34,35969,Possible DDoS Attack Detected! 2 requests in 10 seconds.
+2025-05-27 13:43:35,24.133.24.34,35969,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 13:43:35,24.133.24.34,35969,Login attempt (Successful): admin
+2025-05-27 13:43:38,24.133.24.34,35970,Possible DDoS Attack Detected! 3 requests in 10 seconds.
+2025-05-27 13:43:38,24.133.24.34,35970,"POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}"
+2025-05-27 13:43:38,24.133.24.34,35970,Login attempt (Successful): admin

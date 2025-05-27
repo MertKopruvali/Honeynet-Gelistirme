@@ -20,7 +20,7 @@ def log_connection(honeypot_type, ip, port, details="Connection attempt"):
         log.write(log_entry)
 
 # DDoS kontrol fonksiyonu
-def check_ddos(ip):
+def check_ddos(ip, port):
     now = time.time()
     request_times[ip].append(now)
 
@@ -29,8 +29,8 @@ def check_ddos(ip):
         request_times[ip].popleft()
 
     # Eğer 20'den fazla istek varsa şüpheli
-    if len(request_times[ip]) >= 20:
-        log_connection("HTML", ip, "-", f"Possible DDoS Attack Detected! {len(request_times[ip])} requests in 10 seconds.")
+    if len(request_times[ip]) >= 2:
+        log_connection("HTML", ip, port, f"Possible DDoS Attack Detected! {len(request_times[ip])} requests in 10 seconds.")
 
 # HTML Honeypot handler
 class MyHoneypot(BaseHTTPRequestHandler):
@@ -69,12 +69,14 @@ class MyHoneypot(BaseHTTPRequestHandler):
 
     def do_GET(self):
         client_ip = self.client_address[0]
-        check_ddos(client_ip)
+        client_port = self.client_address[1]
+        check_ddos(client_ip, client_port)
         self.log_and_respond("GET")
 
     def do_POST(self):
         client_ip = self.client_address[0]
-        check_ddos(client_ip)
+        client_port = self.client_address[1]
+        check_ddos(client_ip, client_port)
 
         content_length = int(self.headers.get('Content-Length', 0))
         post_data = self.rfile.read(content_length).decode('utf-8', errors='ignore')
@@ -113,5 +115,5 @@ class MyHoneypot(BaseHTTPRequestHandler):
 # Sunucuyu başlat
 if __name__ == "__main__":
     server = HTTPServer(("0.0.0.0", 8081), MyHoneypot)
-    print("[*] HTML Honeypot started on port 8081...")
+    print("[*] Honeypot HTML started on port ...")
     server.serve_forever()

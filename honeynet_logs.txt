@@ -48,3 +48,145 @@
 [2025-05-27 01:52:49] [HTML] [IP: 170.64.154.53] [Port: 46554] GET Request: GET /aaa9 HTTP/1.1
 [2025-05-27 01:52:49] [HTML] [IP: 170.64.154.53] [Port: 46564] GET Request: GET /aab8 HTTP/1.1
 [2025-05-27 01:52:50] [HTML] [IP: 170.64.154.53] [Port: 46580] GET Request: GET / HTTP/1.1
+[2025-05-27 06:53:08] [HTTP] [IP:176.65.148.236] [Port:49778] GET / HTTP/1.1 Request: GET / HTTP/1.1 [User-Agent: ] [OS: Bilinmiyor]
+[2025-05-27 06:57:03] [HTML] [IP: 24.133.24.34] [Port: 35171] POST Request: POST / HTTP/1.1, Data: {}
+[2025-05-27 06:57:03] [HTML] [IP: 24.133.24.34] [Port: 35171] Login attempt (Failed): 
+[2025-05-27 06:57:05] [HTML] [IP: 24.133.24.34] [Port: 35172] POST Request: POST / HTTP/1.1, Data: {}
+[2025-05-27 06:57:05] [HTML] [IP: 24.133.24.34] [Port: 35172] Login attempt (Failed): 
+[2025-05-27 06:57:07] [HTML] [IP: 24.133.24.34] [Port: 35173] POST Request: POST / HTTP/1.1, Data: {}
+[2025-05-27 06:57:07] [HTML] [IP: 24.133.24.34] [Port: 35173] Login attempt (Failed): 
+[2025-05-27 06:57:10] [HTML] [IP: 24.133.24.34] [Port: 35174] POST Request: POST / HTTP/1.1, Data: {}
+[2025-05-27 06:57:10] [HTML] [IP: 24.133.24.34] [Port: 35174] Login attempt (Failed): 
+[2025-05-27 06:57:12] [HTML] [IP: 24.133.24.34] [Port: 35176] POST Request: POST / HTTP/1.1, Data: {}
+[2025-05-27 06:57:12] [HTML] [IP: 24.133.24.34] [Port: 35176] Login attempt (Failed): 
+[2025-05-27 06:57:12] [HTML] [IP: 24.133.24.34] [Port: 35176] Possible Brute Force Attack Detected! Failed attempts: 5
+[2025-05-27 06:57:14] [HTML] [IP: 24.133.24.34] [Port: 35177] POST Request: POST / HTTP/1.1, Data: {}
+[2025-05-27 06:57:14] [HTML] [IP: 24.133.24.34] [Port: 35177] Login attempt (Failed): 
+[2025-05-27 06:57:14] [HTML] [IP: 24.133.24.34] [Port: 35177] Possible Brute Force Attack Detected! Failed attempts: 6
+[2025-05-27 06:58:22] [HTML] [IP: 24.133.24.34] [Port: 35203] POST Request: POST / HTTP/1.1, Data: {}
+[2025-05-27 06:58:22] [HTML] [IP: 24.133.24.34] [Port: 35203] Login attempt (Failed): 
+[2025-05-27 06:58:22] [HTML] [IP: 24.133.24.34] [Port: 35203] Possible Brute Force Attack Detected! Failed attempts: 7
+[2025-05-27 06:58:37] [HTML] [IP: 24.133.24.34] [Port: 35206] POST Request: POST / HTTP/1.1, Data: {}
+[2025-05-27 06:58:37] [HTML] [IP: 24.133.24.34] [Port: 35206] Login attempt (Failed): 
+[2025-05-27 06:58:37] [HTML] [IP: 24.133.24.34] [Port: 35206] Possible Brute Force Attack Detected! Failed attempts: 8
+[2025-05-27 06:58:53] [HTML] [IP: 24.133.24.34] [Port: 35213] POST Request: POST / HTTP/1.1, Data: {}
+[2025-05-27 06:58:53] [HTML] [IP: 24.133.24.34] [Port: 35213] Login attempt (Failed): 
+[2025-05-27 06:58:53] [HTML] [IP: 24.133.24.34] [Port: 35213] Possible Brute Force Attack Detected! Failed attempts: 9
+[2025-05-27 06:59:30] [HTML] [IP: 24.133.24.34] [Port: 35219] POST Request: POST / HTTP/1.1, Data: {}
+[2025-05-27 06:59:30] [HTML] [IP: 24.133.24.34] [Port: 35219] Login attempt (Failed): 
+[2025-05-27 06:59:30] [HTML] [IP: 24.133.24.34] [Port: 35219] Possible Brute Force Attack Detected! Failed attempts: 10
+[2025-05-27 07:00:18] [HTML] [IP: 24.133.24.34] [Port: 35256] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:00:18] [HTML] [IP: 24.133.24.34] [Port: 35256] Login attempt (Successful): admin
+[2025-05-27 07:00:21] [HTML] [IP: 24.133.24.34] [Port: 35257] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:00:21] [HTML] [IP: 24.133.24.34] [Port: 35257] Login attempt (Successful): admin
+[2025-05-27 07:00:23] [HTML] [IP: 24.133.24.34] [Port: 35258] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:00:23] [HTML] [IP: 24.133.24.34] [Port: 35258] Login attempt (Successful): admin
+[2025-05-27 07:00:24] [HTML] [IP: 24.133.24.34] [Port: 35260] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:00:24] [HTML] [IP: 24.133.24.34] [Port: 35260] Login attempt (Successful): admin
+[2025-05-27 07:00:25] [HTML] [IP: 24.133.24.34] [Port: 35261] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:00:25] [HTML] [IP: 24.133.24.34] [Port: 35261] Login attempt (Successful): admin
+[2025-05-27 07:00:26] [HTML] [IP: 24.133.24.34] [Port: 35262] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:00:26] [HTML] [IP: 24.133.24.34] [Port: 35262] Login attempt (Successful): admin
+[2025-05-27 07:00:28] [HTML] [IP: 24.133.24.34] [Port: 35264] POST Request: POST / HTTP/1.1, Data: {}
+[2025-05-27 07:00:28] [HTML] [IP: 24.133.24.34] [Port: 35264] Login attempt (Failed): 
+[2025-05-27 07:00:29] [HTML] [IP: 24.133.24.34] [Port: 35265] POST Request: POST / HTTP/1.1, Data: {}
+[2025-05-27 07:00:29] [HTML] [IP: 24.133.24.34] [Port: 35265] Login attempt (Failed): 
+[2025-05-27 07:00:30] [HTML] [IP: 24.133.24.34] [Port: 35266] POST Request: POST / HTTP/1.1, Data: {}
+[2025-05-27 07:00:30] [HTML] [IP: 24.133.24.34] [Port: 35266] Login attempt (Failed): 
+[2025-05-27 07:00:33] [HTML] [IP: 24.133.24.34] [Port: 35269] POST Request: POST / HTTP/1.1, Data: {}
+[2025-05-27 07:00:33] [HTML] [IP: 24.133.24.34] [Port: 35269] Login attempt (Failed): 
+[2025-05-27 07:00:34] [HTML] [IP: 24.133.24.34] [Port: 35271] POST Request: POST / HTTP/1.1, Data: {}
+[2025-05-27 07:00:34] [HTML] [IP: 24.133.24.34] [Port: 35271] Login attempt (Failed): 
+[2025-05-27 07:00:34] [HTML] [IP: 24.133.24.34] [Port: 35271] Possible Brute Force Attack Detected! Failed attempts: 5
+[2025-05-27 07:00:36] [HTML] [IP: 24.133.24.34] [Port: 35272] POST Request: POST / HTTP/1.1, Data: {}
+[2025-05-27 07:00:36] [HTML] [IP: 24.133.24.34] [Port: 35272] Login attempt (Failed): 
+[2025-05-27 07:00:36] [HTML] [IP: 24.133.24.34] [Port: 35272] Possible Brute Force Attack Detected! Failed attempts: 6
+[2025-05-27 07:00:39] [HTML] [IP: 24.133.24.34] [Port: 35273] POST Request: POST / HTTP/1.1, Data: {}
+[2025-05-27 07:00:39] [HTML] [IP: 24.133.24.34] [Port: 35273] Login attempt (Failed): 
+[2025-05-27 07:00:39] [HTML] [IP: 24.133.24.34] [Port: 35273] Possible Brute Force Attack Detected! Failed attempts: 7
+[2025-05-27 07:00:46] [HTML] [IP: 24.133.24.34] [Port: 35274] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:00:46] [HTML] [IP: 24.133.24.34] [Port: 35274] Login attempt (Successful): admin
+[2025-05-27 07:03:00] [HTML] [IP: 24.133.24.34] [Port: 35305] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:03:00] [HTML] [IP: 24.133.24.34] [Port: 35305] Login attempt (Successful): admin
+[2025-05-27 07:03:02] [HTML] [IP: 24.133.24.34] [Port: 35306] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:03:02] [HTML] [IP: 24.133.24.34] [Port: 35306] Login attempt (Successful): admin
+[2025-05-27 07:03:05] [HTML] [IP: 24.133.24.34] [Port: 35307] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:03:05] [HTML] [IP: 24.133.24.34] [Port: 35307] Login attempt (Successful): admin
+[2025-05-27 07:03:06] [HTML] [IP: 24.133.24.34] [Port: 35308] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:03:06] [HTML] [IP: 24.133.24.34] [Port: 35308] Login attempt (Successful): admin
+[2025-05-27 07:03:08] [HTML] [IP: 24.133.24.34] [Port: 35309] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:03:08] [HTML] [IP: 24.133.24.34] [Port: 35309] Login attempt (Successful): admin
+[2025-05-27 07:03:09] [HTML] [IP: 24.133.24.34] [Port: 35310] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:03:09] [HTML] [IP: 24.133.24.34] [Port: 35310] Login attempt (Successful): admin
+[2025-05-27 07:03:11] [HTML] [IP: 24.133.24.34] [Port: 35311] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:03:11] [HTML] [IP: 24.133.24.34] [Port: 35311] Login attempt (Successful): admin
+[2025-05-27 07:03:12] [HTML] [IP: 24.133.24.34] [Port: 35314] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:03:12] [HTML] [IP: 24.133.24.34] [Port: 35314] Login attempt (Successful): admin
+[2025-05-27 07:03:14] [HTML] [IP: 24.133.24.34] [Port: 35315] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:03:14] [HTML] [IP: 24.133.24.34] [Port: 35315] Login attempt (Successful): admin
+[2025-05-27 07:03:16] [HTML] [IP: 24.133.24.34] [Port: 35316] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:03:16] [HTML] [IP: 24.133.24.34] [Port: 35316] Login attempt (Successful): admin
+[2025-05-27 07:03:17] [HTML] [IP: 24.133.24.34] [Port: 35319] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:03:17] [HTML] [IP: 24.133.24.34] [Port: 35319] Login attempt (Successful): admin
+[2025-05-27 07:03:22] [HTML] [IP: 24.133.24.34] [Port: 35320] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:03:22] [HTML] [IP: 24.133.24.34] [Port: 35320] Login attempt (Successful): admin
+[2025-05-27 07:03:26] [HTML] [IP: 24.133.24.34] [Port: 35321] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}
+[2025-05-27 07:03:26] [HTML] [IP: 24.133.24.34] [Port: 35321] Login attempt (Failed): admin
+[2025-05-27 07:03:27] [HTML] [IP: 24.133.24.34] [Port: 35323] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}
+[2025-05-27 07:03:27] [HTML] [IP: 24.133.24.34] [Port: 35323] Login attempt (Failed): admin
+[2025-05-27 07:03:29] [HTML] [IP: 24.133.24.34] [Port: 35324] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}
+[2025-05-27 07:03:29] [HTML] [IP: 24.133.24.34] [Port: 35324] Login attempt (Failed): admin
+[2025-05-27 07:03:31] [HTML] [IP: 24.133.24.34] [Port: 35325] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}
+[2025-05-27 07:03:31] [HTML] [IP: 24.133.24.34] [Port: 35325] Login attempt (Failed): admin
+[2025-05-27 07:03:32] [HTML] [IP: 24.133.24.34] [Port: 35326] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}
+[2025-05-27 07:03:32] [HTML] [IP: 24.133.24.34] [Port: 35326] Login attempt (Failed): admin
+[2025-05-27 07:03:32] [HTML] [IP: 24.133.24.34] [Port: 35326] Possible Brute Force Attack Detected! Failed attempts: 5
+[2025-05-27 07:03:34] [HTML] [IP: 24.133.24.34] [Port: 35327] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}
+[2025-05-27 07:03:34] [HTML] [IP: 24.133.24.34] [Port: 35327] Login attempt (Failed): admin
+[2025-05-27 07:03:34] [HTML] [IP: 24.133.24.34] [Port: 35327] Possible Brute Force Attack Detected! Failed attempts: 6
+[2025-05-27 07:03:35] [HTML] [IP: 24.133.24.34] [Port: 35328] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}
+[2025-05-27 07:03:35] [HTML] [IP: 24.133.24.34] [Port: 35328] Login attempt (Failed): admin
+[2025-05-27 07:03:35] [HTML] [IP: 24.133.24.34] [Port: 35328] Possible Brute Force Attack Detected! Failed attempts: 7
+[2025-05-27 07:03:38] [HTML] [IP: 24.133.24.34] [Port: 35329] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}
+[2025-05-27 07:03:38] [HTML] [IP: 24.133.24.34] [Port: 35329] Login attempt (Failed): admin
+[2025-05-27 07:03:38] [HTML] [IP: 24.133.24.34] [Port: 35329] Possible Brute Force Attack Detected! Failed attempts: 8
+[2025-05-27 07:03:39] [HTML] [IP: 24.133.24.34] [Port: 35330] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}
+[2025-05-27 07:03:39] [HTML] [IP: 24.133.24.34] [Port: 35330] Login attempt (Failed): admin
+[2025-05-27 07:03:39] [HTML] [IP: 24.133.24.34] [Port: 35330] Possible Brute Force Attack Detected! Failed attempts: 9
+[2025-05-27 07:03:40] [HTML] [IP: 24.133.24.34] [Port: 35331] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}
+[2025-05-27 07:03:40] [HTML] [IP: 24.133.24.34] [Port: 35331] Login attempt (Failed): admin
+[2025-05-27 07:03:40] [HTML] [IP: 24.133.24.34] [Port: 35331] Possible Brute Force Attack Detected! Failed attempts: 10
+[2025-05-27 07:03:41] [HTML] [IP: 24.133.24.34] [Port: 35332] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}
+[2025-05-27 07:03:41] [HTML] [IP: 24.133.24.34] [Port: 35332] Login attempt (Failed): admin
+[2025-05-27 07:03:41] [HTML] [IP: 24.133.24.34] [Port: 35332] Possible Brute Force Attack Detected! Failed attempts: 11
+[2025-05-27 07:03:41] [HTML] [IP: 24.133.24.34] [Port: 35333] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}
+[2025-05-27 07:03:41] [HTML] [IP: 24.133.24.34] [Port: 35333] Login attempt (Failed): admin
+[2025-05-27 07:03:41] [HTML] [IP: 24.133.24.34] [Port: 35333] Possible Brute Force Attack Detected! Failed attempts: 12
+[2025-05-27 07:07:18] [HTTP] [IP:182.45.140.4] [Port:46536] Boş istek Request: Boş istek [User-Agent: ] [OS: Bilinmiyor]
+[2025-05-27 07:08:47] [HTML] [IP: 24.133.24.34] [Port: 35404] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}
+[2025-05-27 07:08:47] [HTML] [IP: 24.133.24.34] [Port: 35404] Login attempt (Failed): admin
+[2025-05-27 07:08:49] [HTML] [IP: 24.133.24.34] [Port: -] Possible DDoS Attack Detected! 2 requests in 10 seconds.
+[2025-05-27 07:08:49] [HTML] [IP: 24.133.24.34] [Port: 35405] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}
+[2025-05-27 07:08:49] [HTML] [IP: 24.133.24.34] [Port: 35405] Login attempt (Failed): admin
+[2025-05-27 07:08:51] [HTML] [IP: 24.133.24.34] [Port: -] Possible DDoS Attack Detected! 3 requests in 10 seconds.
+[2025-05-27 07:08:51] [HTML] [IP: 24.133.24.34] [Port: 35406] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}
+[2025-05-27 07:08:51] [HTML] [IP: 24.133.24.34] [Port: 35406] Login attempt (Failed): admin
+[2025-05-27 07:10:31] [HTML] [IP: 24.133.24.34] [Port: 35424] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['passwor']}
+[2025-05-27 07:10:31] [HTML] [IP: 24.133.24.34] [Port: 35424] Login attempt (Failed): admin
+[2025-05-27 07:10:35] [HTML] [IP: 24.133.24.34] [Port: -] Possible DDoS Attack Detected! 2 requests in 10 seconds.
+[2025-05-27 07:10:35] [HTML] [IP: 24.133.24.34] [Port: 35425] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 07:10:35] [HTML] [IP: 24.133.24.34] [Port: 35425] Login attempt (Successful): admin
+[2025-05-27 07:20:31] [HTTP] [IP:74.249.128.189] [Port:39918] GET /manager/html HTTP/1.1 Request: GET /manager/html HTTP/1.1 [User-Agent: Mozilla/5.0 zgrab/0.x] [OS: Bilinmiyor]
+[2025-05-27 13:23:32] [HTML] [IP: 24.133.24.34] [Port: 35605] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 13:23:32] [HTML] [IP: 24.133.24.34] [Port: 35605] Login attempt (Successful): admin
+[2025-05-27 13:25:45] [HTML] [IP: 24.133.24.34] [Port: 35653] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 13:25:45] [HTML] [IP: 24.133.24.34] [Port: 35653] Login attempt (Successful): admin
+[2025-05-27 13:43:33] [HTML] [IP: 24.133.24.34] [Port: 35968] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 13:43:33] [HTML] [IP: 24.133.24.34] [Port: 35968] Login attempt (Successful): admin
+[2025-05-27 13:43:35] [HTML] [IP: 24.133.24.34] [Port: 35969] Possible DDoS Attack Detected! 2 requests in 10 seconds.
+[2025-05-27 13:43:35] [HTML] [IP: 24.133.24.34] [Port: 35969] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 13:43:35] [HTML] [IP: 24.133.24.34] [Port: 35969] Login attempt (Successful): admin
+[2025-05-27 13:43:38] [HTML] [IP: 24.133.24.34] [Port: 35970] Possible DDoS Attack Detected! 3 requests in 10 seconds.
+[2025-05-27 13:43:38] [HTML] [IP: 24.133.24.34] [Port: 35970] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-05-27 13:43:38] [HTML] [IP: 24.133.24.34] [Port: 35970] Login attempt (Successful): admin
+[2025-05-27 14:06:04] [HTML] [IP: 78.62.37.203] [Port: 52428] GET Request: GET / HTTP/1.0

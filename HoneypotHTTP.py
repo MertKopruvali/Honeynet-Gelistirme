@@ -143,7 +143,7 @@ def start_honeypot(host='0.0.0.0', port=8080):
         server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         server.bind((host, port))
         server.listen(5)
-        print(f"[*] Honeypot {port} portunda dinliyor...")
+        print(f"[*] Honeypot HTTP started on port {port} ")
 
         while True:
             client, addr = server.accept()
