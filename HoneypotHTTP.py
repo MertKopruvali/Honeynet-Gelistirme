@@ -185,9 +185,9 @@ def start_honeypot(host='0.0.0.0', port=8080):
                     if '=' in pair:
                         key, value = pair.split('=', 1)
                         form_data[key] = value
-                log_connection("HTTP", addr[0], addr[1], f"Request: {method} Form Data: {form_data}", os=os_name, exploit_type=exploit_type)
+                log_connection("HTTP", addr[0], addr[1], f"{method} Request: {method} Form Data: {form_data}", os=os_name, exploit_type=exploit_type)
             else:
-                log_connection("HTTP", addr[0], addr[1], f"Request: {request_line} [User-Agent: {user_agent}]", os=os_name, exploit_type=exploit_type)
+                log_connection("HTTP", addr[0], addr[1], f"{request_line} Request: {request_line} [User-Agent: {user_agent}]", os=os_name, exploit_type=exploit_type)
 
             # Yanıtlar
             response = (

@@ -26,7 +26,11 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="title has-text-white">Honeypot Saldırı Grafikleri</h1>
+        <h1 class="title has-text-white" style="text-align: center;">Honeypot Saldırı Grafikleri</h1>
+        <form action="{{ url_for('refresh') }}" method="get">
+            <button type="submit" style="margin-bottom: 20px;">🔄Yenile</button>
+        </form>
+
         <form method="get" action="/">
             <div class="field">
                 <label class="label has-text-white">Honeypot Türü</label>
