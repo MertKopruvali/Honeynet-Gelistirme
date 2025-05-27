@@ -23,6 +23,45 @@
             background-color: #2e2e2e;
             color: white;
         }
+
+        .custom-select{
+            position: relative;
+            display: inline-block;
+            width: fit-content;
+        }
+
+        .custom-select select {
+            background-color:#2e2e2e;   
+            color: white;                
+            border: 1px solid #4a4a4a;
+            border-radius: 4px;       
+            padding: 0.5rem 2rem 0.5rem 0.75rem;
+            font-size: 0.875rem;         
+            appearance: none;
+            cursor: pointer;
+            background-image: none !important;
+        }
+
+        .custom-select::after {
+            content: "▼";
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            color: white;
+            font-size: 0.75rem;
+            z-index: 1;
+        }    
+
+        .custom-select select:focus {
+            outline: none;
+            border: 1px solid #4a4a4a;
+            box-shadow: 0 0 4px rgba(255,255,255,0.2);
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -38,10 +77,10 @@
         </form>
 
         <form method="get" action="/">
-            <div class="field">
-                <label class="label has-text-white">Honeypot Türü</label>
+            <div class="field" style="display: flex; flex-direction: column; align-items: center;">
+                <label class="label has-text-white" style="margin-bottom: 0.5rem;">Honeypot Türü</label>
                 <div class="control">
-                    <div class="select is-dark">
+                    <div class="select custom-select">
                         <select name="type" onchange="this.form.submit()">
                             <option value="http" {% if selected == 'http' %}selected{% endif %}>HTTP</option>
                             <option value="html" {% if selected == 'html' %}selected{% endif %}>HTML</option>
@@ -50,6 +89,26 @@
                     </div>
                 </div>
             </div>
+
+            <div class="field">
+                <label class="label has-text-white">Gün Seç</label>
+                <div class="control">
+                    <div class="select is-dark">
+                        <select name="days">
+                            <option value="1" {% if days == '1' %}selected{% endif %}>Son 1 Gün</option>
+                            <option value="3" {% if days == '3' %}selected{% endif %}>Son 3 Gün</option>
+                            <option value="7" {% if days == '7' or not days %}selected{% endif %}>Son 7 Gün</option>
+                            <option value="10" {% if days == '10' %}selected{% endif %}>Son 10 Gün</option>
+                            <option value="30" {% if days == '30' %}selected{% endif %}>Son 30 Gün</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+  <div class="field" style="margin-top: 2rem;">
+    <button type="submit" class="button is-link">Filtrele</button>
+  </div>
+
         </form>
 
         <div class="box">

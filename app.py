@@ -292,13 +292,17 @@ def plot_graphs(df, graph_type):
 @app.route('/', methods=["GET"])
 def index():
     graph_type = request.args.get("type", "http").lower()
-    df = load_data(graph_type)
+    days = int(request.args.get("days",7))
+
+    df = load_data(graph_type, days)
     time_graph, ip_graph, request_graph = plot_graphs(df, graph_type)
+
     return render_template('index.html',
                          time_graph=time_graph,
                          ip_graph=ip_graph,
                          request_graph=request_graph,
-                         selected=graph_type)
+                         selected=graph_type,
+                         days=str(days))
 
 @app.route('/refresh')
 def refresh():

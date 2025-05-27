@@ -45,3 +45,6 @@
 [2025-05-27 00:41:36] [HTTP] [IP:182.45.140.4] [Port:50480] Boş istek Request: Boş istek [User-Agent: ] [OS: Bilinmiyor]
 [2025-05-27 00:44:36] [HTTP] [IP:152.53.248.175] [Port:42844] CONNECT www.google.com:443 HTTP/1.1 Request: CONNECT www.google.com:443 HTTP/1.1 [User-Agent: Go-http-client/1.1] [OS: Bilinmiyor]
 [2025-05-27 01:13:29] [HTTP] [IP:68.69.186.106] [Port:52954] CONNECT www.google.com:443 HTTP/1.1 Request: CONNECT www.google.com:443 HTTP/1.1 [User-Agent: Go-http-client/1.1] [OS: Bilinmiyor]
+[2025-05-27 01:52:49] [HTML] [IP: 170.64.154.53] [Port: 46554] GET Request: GET /aaa9 HTTP/1.1
+[2025-05-27 01:52:49] [HTML] [IP: 170.64.154.53] [Port: 46564] GET Request: GET /aab8 HTTP/1.1
+[2025-05-27 01:52:50] [HTML] [IP: 170.64.154.53] [Port: 46580] GET Request: GET / HTTP/1.1
