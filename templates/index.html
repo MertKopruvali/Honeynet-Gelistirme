@@ -2,8 +2,9 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Honeypot Saldırı Grafikleri</title>
+    <title>Honeynet Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         body {
             background-color: #1e1e1e;
@@ -26,9 +27,14 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="title has-text-white" style="text-align: center;">Honeypot Saldırı Grafikleri</h1>
-        <form action="{{ url_for('refresh') }}" method="get">
-            <button type="submit" style="margin-bottom: 20px;">🔄Yenile</button>
+        <h1 class="title is-2 has-text-white has-text-centered" style="text-shadow: 2px 2px 6px rgba(0,0,0,0.7); font-weight: 700;">Honeypot Saldırı Grafikleri</h1>
+        <form action="{{ url_for('refresh') }}" method="get" style="display: flex; justify-content: center; margin-bottom: 20px;">
+            <button class="button is-small is-dark is-rounded " type="submit">
+                <span class="icon">   
+                    <i class="fas fa-sync-alt"></i>
+                </span>
+                <span>Yenile</span>
+            </button>
         </form>
 
         <form method="get" action="/">

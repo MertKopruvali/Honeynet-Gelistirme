@@ -24,3 +24,6 @@ timestamp,ip,port,request_type,request_info
 2025-05-27 00:33:45,24.133.24.34,34504,POST,POST Request: POST Form Data: {} [OS: Komut Satırı (Linux/macOS)]
 2025-05-27 00:33:47,24.133.24.34,34505,POST,POST Request: POST Form Data: {} [OS: Komut Satırı (Linux/macOS)]
 2025-05-27 00:33:49,24.133.24.34,34506,POST,POST Request: POST Form Data: {} [OS: Komut Satırı (Linux/macOS)]
+2025-05-27 00:41:36,182.45.140.4,50480,Bilinmeyen,Boş istek Request: Boş istek [User-Agent: ] [OS: Bilinmiyor]
+2025-05-27 00:44:36,152.53.248.175,42844,Bilinmeyen,CONNECT www.google.com:443 HTTP/1.1 Request: CONNECT www.google.com:443 HTTP/1.1 [User-Agent: Go-http-client/1.1] [OS: Bilinmiyor]
+2025-05-27 01:13:29,68.69.186.106,52954,Bilinmeyen,CONNECT www.google.com:443 HTTP/1.1 Request: CONNECT www.google.com:443 HTTP/1.1 [User-Agent: Go-http-client/1.1] [OS: Bilinmiyor]

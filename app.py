@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from matplotlib.ticker import MaxNLocator
 import matplotlib.pyplot as plt
 import pandas as pd
 from datetime import datetime
@@ -7,6 +8,7 @@ import re
 import csv
 from collections import defaultdict
 from flask import redirect, url_for
+from datetime import timedelta
 
 
 app = Flask(__name__)
@@ -177,7 +179,7 @@ def get_statistics(data):
     return stats
 
 # Veri yükleme fonksiyonu
-def load_data(log_type):
+def load_data(log_type, days=7):
     filename = {
         "http": "http_logs.csv",
         "html": "html_logs.csv",
@@ -186,7 +188,12 @@ def load_data(log_type):
 
     df = pd.read_csv(filename)
     df["timestamp"] = pd.to_datetime(df["timestamp"], errors='coerce')
-    return df.dropna(subset=["timestamp"])
+    df = df.dropna(subset=["timestamp"])
+
+    cutoff_date = pd.Timestamp.now() - pd.Timedelta(days=days)
+    df = df[df["timestamp"] >= cutoff_date]
+
+    return df
 
 # Zaman ve IP tabanlı grafik çizme fonksiyonu
 def plot_graphs(df, graph_type):
@@ -225,6 +232,7 @@ def plot_graphs(df, graph_type):
     ax1.set_xlabel("Zaman", fontsize=12, color='#AAAAAA')
     ax1.set_ylabel("İstek Sayısı", fontsize=12, color='#AAAAAA')
     ax1.tick_params(colors='#AAAAAA')
+    ax1.yaxis.set_major_locator(MaxNLocator(integer=True))
     ax1.spines['bottom'].set_color('#444444')
     ax1.spines['top'].set_color('#444444')
     ax1.spines['right'].set_color('#444444')
@@ -242,6 +250,7 @@ def plot_graphs(df, graph_type):
         ax2.set_xlabel("IP Adresi", fontsize=12, color='#AAAAAA')
         ax2.set_ylabel("İstek Sayısı", fontsize=12, color='#AAAAAA')
         ax2.tick_params(colors='#AAAAAA', rotation=45)
+        ax2.yaxis.set_major_locator(MaxNLocator(integer=True))
         ax2.spines['bottom'].set_color('#444444')
         ax2.spines['top'].set_color('#444444')
         ax2.spines['right'].set_color('#444444')
@@ -268,6 +277,7 @@ def plot_graphs(df, graph_type):
         
         ax3.set_ylabel("Sayı", fontsize=12, color='#AAAAAA')
         ax3.tick_params(colors='#AAAAAA', rotation=0)
+        ax3.yaxis.set_major_locator(MaxNLocator(integer=True))
         ax3.spines['bottom'].set_color('#444444')
         ax3.spines['top'].set_color('#444444')
         ax3.spines['right'].set_color('#444444')
