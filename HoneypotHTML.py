@@ -28,8 +28,8 @@ def check_ddos(ip, port):
     while request_times[ip] and now - request_times[ip][0] > 10:
         request_times[ip].popleft()
 
-    # Eğer 20'den fazla istek varsa şüpheli
-    if len(request_times[ip]) >= 2:
+    # Eğer 10'den fazla istek varsa şüpheli
+    if len(request_times[ip]) >= 10:
         log_connection("HTML", ip, port, f"Possible DDoS Attack Detected! {len(request_times[ip])} requests in 10 seconds.")
 
 # HTML Honeypot handler
@@ -115,5 +115,5 @@ class MyHoneypot(BaseHTTPRequestHandler):
 # Sunucuyu başlat
 if __name__ == "__main__":
     server = HTTPServer(("0.0.0.0", 8081), MyHoneypot)
-    print("[*] Honeypot HTML started on port ...")
+    print("[*] Honeypot HTML started on port 8081")
     server.serve_forever()

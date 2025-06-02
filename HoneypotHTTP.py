@@ -118,7 +118,7 @@ def detect_ddos(ip):
 
     print(f"[DEBUG] {ip} son 10 sn'de {len(request_counter[ip])} istek gönderdi")
 
-    if len(request_counter[ip]) > 20:
+    if len(request_counter[ip]) > 10:
         return True
     return False
 
@@ -143,7 +143,7 @@ def start_honeypot(host='0.0.0.0', port=8080):
         server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         server.bind((host, port))
         server.listen(5)
-        print(f"[*] Honeypot HTTP started on port {port} ")
+        print(f"[*] Honeypot HTTP started on port 8080 ")
 
         while True:
             client, addr = server.accept()

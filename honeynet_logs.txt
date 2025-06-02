@@ -190,3 +190,49 @@
 [2025-05-27 13:43:38] [HTML] [IP: 24.133.24.34] [Port: 35970] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
 [2025-05-27 13:43:38] [HTML] [IP: 24.133.24.34] [Port: 35970] Login attempt (Successful): admin
 [2025-05-27 14:06:04] [HTML] [IP: 78.62.37.203] [Port: 52428] GET Request: GET / HTTP/1.0
+[2025-06-02 06:16:34] [HTML] [IP: 24.133.24.34] [Port: 36625] GET Request: GET / HTTP/1.1
+[2025-06-02 06:17:35] [HTML] [IP: 24.133.24.34] [Port: 36635] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['wrongpass']}
+[2025-06-02 06:17:35] [HTML] [IP: 24.133.24.34] [Port: 36635] Login attempt (Failed): admin
+[2025-06-02 06:17:40] [HTML] [IP: 24.133.24.34] [Port: 36643] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['wrongpass']}
+[2025-06-02 06:17:40] [HTML] [IP: 24.133.24.34] [Port: 36643] Login attempt (Failed): admin
+[2025-06-02 06:17:41] [HTML] [IP: 24.133.24.34] [Port: 36645] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['wrongpass']}
+[2025-06-02 06:17:41] [HTML] [IP: 24.133.24.34] [Port: 36645] Login attempt (Failed): admin
+[2025-06-02 06:17:42] [HTML] [IP: 24.133.24.34] [Port: 36646] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['wrongpass']}
+[2025-06-02 06:17:42] [HTML] [IP: 24.133.24.34] [Port: 36646] Login attempt (Failed): admin
+[2025-06-02 06:17:43] [HTML] [IP: 24.133.24.34] [Port: 36651] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['wrongpass']}
+[2025-06-02 06:17:43] [HTML] [IP: 24.133.24.34] [Port: 36651] Login attempt (Failed): admin
+[2025-06-02 06:17:43] [HTML] [IP: 24.133.24.34] [Port: 36651] Possible Brute Force Attack Detected! Failed attempts: 5
+[2025-06-02 06:18:58] [HTML] [IP: 24.133.24.34] [Port: 36666] POST Request: POST / HTTP/1.1, Data: {'username': ['admin'], 'password': ['password']}
+[2025-06-02 06:18:58] [HTML] [IP: 24.133.24.34] [Port: 36666] Login attempt (Successful): admin
+[2025-06-02 06:20:34] [HTML] [IP: 24.133.24.34] [Port: 36716] GET Request: GET / HTTP/1.1
+[2025-06-02 06:20:35] [HTML] [IP: 24.133.24.34] [Port: 36717] GET Request: GET / HTTP/1.1
+[2025-06-02 06:20:36] [HTML] [IP: 24.133.24.34] [Port: 36718] GET Request: GET / HTTP/1.1
+[2025-06-02 06:20:37] [HTML] [IP: 24.133.24.34] [Port: 36719] GET Request: GET / HTTP/1.1
+[2025-06-02 06:20:38] [HTML] [IP: 24.133.24.34] [Port: 36720] GET Request: GET / HTTP/1.1
+[2025-06-02 06:20:39] [HTML] [IP: 24.133.24.34] [Port: 36721] GET Request: GET / HTTP/1.1
+[2025-06-02 06:20:39] [HTML] [IP: 24.133.24.34] [Port: 36728] GET Request: GET / HTTP/1.1
+[2025-06-02 06:20:40] [HTML] [IP: 24.133.24.34] [Port: 36729] GET Request: GET / HTTP/1.1
+[2025-06-02 06:20:41] [HTML] [IP: 24.133.24.34] [Port: 36730] GET Request: GET / HTTP/1.1
+[2025-06-02 06:20:41] [HTML] [IP: 24.133.24.34] [Port: 36732] Possible DDoS Attack Detected! 10 requests in 10 seconds.
+[2025-06-02 06:20:41] [HTML] [IP: 24.133.24.34] [Port: 36732] GET Request: GET / HTTP/1.1
+[2025-06-02 06:20:42] [HTML] [IP: 24.133.24.34] [Port: 36733] Possible DDoS Attack Detected! 11 requests in 10 seconds.
+[2025-06-02 06:20:42] [HTML] [IP: 24.133.24.34] [Port: 36733] GET Request: GET / HTTP/1.1
+[2025-06-02 06:20:42] [HTML] [IP: 24.133.24.34] [Port: 36734] Possible DDoS Attack Detected! 12 requests in 10 seconds.
+[2025-06-02 06:20:42] [HTML] [IP: 24.133.24.34] [Port: 36734] GET Request: GET / HTTP/1.1
+[2025-06-02 06:25:12] [HTML] [IP: 24.133.24.34] [Port: 37003] GET Request: GET / HTTP/1.1
+[2025-06-02 06:25:19] [HTML] [IP: 24.133.24.34] [Port: 37007] POST Request: POST / HTTP/1.1, Data: {'username': ['mert'], 'password': ['can']}
+[2025-06-02 06:25:19] [HTML] [IP: 24.133.24.34] [Port: 37007] Login attempt (Failed): mert
+[2025-06-02 06:25:30] [HTML] [IP: 24.133.24.34] [Port: 37021] GET Request: GET / HTTP/1.1
+[2025-06-02 06:31:47] [HTTP] [IP:24.133.24.34] [Port:37218] GET / HTTP/1.1 Request: GET / HTTP/1.1 [User-Agent: curl/8.9.1] [OS: Komut Satırı (Linux/macOS)]
+[2025-06-02 06:33:05] [HTTP] [IP:24.133.24.34] [Port:33332] POST Request: POST Form Data: {} [OS: Komut Satırı (Linux/macOS)]
+[2025-06-02 06:34:07] [HTTP] [IP:24.133.24.34] [Port:33380] POST Request: POST Form Data: {} [OS: Komut Satırı (Linux/macOS)]
+[2025-06-02 06:35:35] [HTTP] [IP:24.133.24.34] [Port:33391] PUT Request: PUT Form Data: {} [OS: Komut Satırı (Linux/macOS)]
+[2025-06-02 06:35:43] [HTTP] [IP:24.133.24.34] [Port:33402] PATCH Request: PATCH Form Data: {} [OS: Komut Satırı (Linux/macOS)]
+[2025-06-02 06:39:43] [HTTP] [IP:24.133.24.34] [Port:33651] GET /etc/passwd HTTP/1.1 Request: GET /etc/passwd HTTP/1.1 [User-Agent: curl/8.9.1] [OS: Komut Satırı (Linux/macOS)] [Exploit: Directory Traversal Attack]
+[2025-06-02 06:39:52] [HTTP] [IP:24.133.24.34] [Port:33656] GET /%2e%2e/%2e%2e/%2e%2e/etc/passwd HTTP/1.1 Request: GET /%2e%2e/%2e%2e/%2e%2e/etc/passwd HTTP/1.1 [User-Agent: curl/8.9.1] [OS: Komut Satırı (Linux/macOS)] [Exploit: Directory Traversal Attack]
+[2025-06-02 06:41:28] [HTTP] [IP:24.133.24.34] [Port:33913] GET /%2e%2e HTTP/1.1 Request: GET /%2e%2e HTTP/1.1 [User-Agent: curl/8.9.1] [OS: Komut Satırı (Linux/macOS)]
+[2025-06-02 06:44:20] [HTTP] [IP:24.133.24.34] [Port:35685] GET /%2e%2e/%2e%2e HTTP/1.1 Request: GET /%2e%2e/%2e%2e HTTP/1.1 [User-Agent: curl/8.9.1] [OS: Komut Satırı (Linux/macOS)]
+[2025-06-02 06:44:26] [HTTP] [IP:24.133.24.34] [Port:35753] GET /%2e%2e/%2e%2e/%2e%2e HTTP/1.1 Request: GET /%2e%2e/%2e%2e/%2e%2e HTTP/1.1 [User-Agent: curl/8.9.1] [OS: Komut Satırı (Linux/macOS)]
+[2025-06-02 06:45:02] [HTTP] [IP:24.133.24.34] [Port:36041] GET / HTTP/1.1 Request: GET / HTTP/1.1 [User-Agent: curl/8.9.1] [OS: Komut Satırı (Linux/macOS)]
+[2025-06-02 06:47:45] [HTTP] [IP:24.133.24.34] [Port:37003] POST Request: POST Form Data: {'kullanici': 'admin', 'parola': "' OR '1'='1"} [OS: Komut Satırı (Linux/macOS)] [Exploit: SQL Injection Attack]
+[2025-06-02 06:49:16] [HTTP] [IP:24.133.24.34] [Port:33938] POST Request: POST Form Data: {'kullanici': "<script>alert('xss')</script>", 'parola': 'test'} [OS: Komut Satırı (Linux/macOS)] [Exploit: XSS (Cross-Site Scripting) Attack]
